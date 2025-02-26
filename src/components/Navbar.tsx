@@ -17,11 +17,11 @@ function Navbar() {
   }, []);
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Us" },
-    { path: "/programmes", label: "Our Programmes" },
-    { path: "/community", label: "Our Community" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: "HOME" },
+    { path: "/about", label: "ABOUT" },
+    { path: "/programmes", label: "PROGRAMS" },
+    { path: "/community", label: "COMMUNITY" },
+    { path: "/contact", label: "CONTACT" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

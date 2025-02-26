@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Heart, Globe, HandHelping, Users, Target, Award } from 'lucide-react';
 
 function About() {
-  const [, inView] = useInView({
+  useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -36,7 +36,7 @@ function About() {
       className="rounded-lg overflow-hidden"
     >
       <img
-        src="https://images.unsplash.com/photo-1576765607924-1c08f94bb3ef?auto=format&fit=crop&q=80"
+        src="/005.jpeg"
         alt="Healthcare workers"
         className="w-full h-full object-cover"
       />
@@ -56,6 +56,8 @@ function About() {
       <p className="text-gray-700 text-lg">
         Through our dedicated team of professionals, we ensure that families receive the best possible care, empowering communities for a healthier future.
       </p>
+      <p className="text-gray-700 text-lg mb-4">
+      We believe that every mother and child deserves access to quality healthcare, regardless of their location or socioeconomic status, and strive to eliminate disparities through sustainable and impactful initiatives.      </p>
     </motion.div>
   </div>
 </section>
@@ -94,43 +96,42 @@ function About() {
         </div>
       </section>
 
-       {/* Impact Section */}
-       <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Our Impact</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+      {/* Governance Structure Section */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-6">Governance Structure</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <Users className="w-12 h-12 text-purple-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Board of Directors</h3>
+              <p className="text-gray-600">Providing strategic guidance and oversight for MANCA’s mission and objectives.</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <Target className="w-12 h-12 text-blue-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Executive Coordinator</h3>
+              <p className="text-gray-600">Leading day-to-day operations and ensuring effective execution of programs.</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <Award className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Program Managers</h3>
+              <p className="text-gray-600">Overseeing maternal health, neonatal care, child wellness, and adolescent health programs.</p>
+            </motion.div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center p-6 bg-white rounded-lg shadow-md"
-            >
-              <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">10,000+</h3>
-              <p className="text-gray-600">Families Supported</p>
+          <div className="grid md:grid-cols-3 gap-8 mt-8">
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Finance & Admin</h3>
+              <p className="text-gray-600">Ensuring financial accountability and smooth administrative operations.</p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-center p-6 bg-white rounded-lg shadow-md"
-            >
-              <Target className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">50+</h3>
-              <p className="text-gray-600">Communities Reached</p>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <Globe className="w-12 h-12 text-green-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Monitoring & Evaluation</h3>
+              <p className="text-gray-600">Tracking program effectiveness and data-driven improvements.</p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-center p-6 bg-white rounded-lg shadow-md"
-            >
-              <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">15+</h3>
-              <p className="text-gray-600">Healthcare Programs</p>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded-lg shadow-md">
+              <HandHelping className="w-12 h-12 text-indigo-500 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Community Health Promoters</h3>
+              <p className="text-gray-600">Delivering health services and education at the grassroots level.</p>
             </motion.div>
           </div>
         </div>
