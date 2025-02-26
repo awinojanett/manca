@@ -97,15 +97,19 @@ function Navbar() {
           isScrolled ? "shadow-md" : "shadow-sm"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-            <div className="h-16 w-auto">
-              <img src="main1.png" alt="MANCA Health Foundation Logo" className="w-full h-full" />
+              <Link to="/" className="flex items-center space-x-2">
+                <div className="h-12 w-auto">
+                  <img
+                    src="main1.png"
+                    alt="MANCA Health Foundation Logo"
+                    className="w-full h-full"
+                  />
+                </div>
+              </Link>
             </div>
-            </Link>
-          </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex md:items-center md:space-x-8">
@@ -116,7 +120,7 @@ function Navbar() {
                   className={`px-3 py-2 text-sm font-medium rounded-full transition-colors ${
                     isActive(link.path)
                       ? "text-blue-500"
-                     : "text-gray-600 hover:text-blue-500"
+                      : "text-gray-600 hover:text-blue-500"
                   }`}
                 >
                   {link.label}
@@ -125,7 +129,8 @@ function Navbar() {
               <Link
                 to="/donate"
                 className="block w-full text-center px-4 py-2 mt-4 text-sm font-medium text-green-600 border-2 border-green-600 hover:text-green-700 hover:border-green-700 rounded-full transition-colors"
-                onClick={() => setIsOpen(false)}>
+                onClick={() => setIsOpen(false)}
+              >
                 Donate
               </Link>
             </div>
@@ -165,7 +170,8 @@ function Navbar() {
               <Link
                 to="/donate"
                 className="block w-full text-center px-4 py-2 mt-4 text-sm font-medium text-white bg-green-600 border-2 border-green-600 hover:bg-green-700 hover:border-green-700 rounded-full transition-colors"
-                onClick={() => setIsOpen(false)}>
+                onClick={() => setIsOpen(false)}
+              >
                 Donate
               </Link>
             </div>
