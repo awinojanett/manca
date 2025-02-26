@@ -4,6 +4,7 @@ import Programs from '../components/Programs';
 import Mission from '../components/Mission';
 import Values from '../components/Values';
 import HeroSection from '../components/HeroSection';
+import Images from '../components/Images';
 
 function Home() {
   const scrollToPrograms = () => {
@@ -17,6 +18,7 @@ function Home() {
       <Mission />
       <HeroSection />
       <Values />
+      <Images />
       <Programs />
     </div>
   );
