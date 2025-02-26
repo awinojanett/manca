@@ -38,9 +38,9 @@ function Community() {
       <div className="relative h-[60vh] flex items-center justify-center bg-gradient-to-r from-manca-blue to-manca-green">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80"
+            src="/004.jpeg"
             alt="Community"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-40"
           />
         </div>
         <div className="relative z-10 text-center text-white px-4">

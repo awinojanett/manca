@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Heart, Globe, HandHelping, Users, Target, Award } from 'lucide-react';
+import Strategies from '../components/Strategies';
 
 function About() {
   useInView({
@@ -14,9 +15,9 @@ function About() {
       <div className="relative h-[70vh] flex items-center justify-center bg-gradient-to-r from-blue-700 to-indigo-700">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&q=80"
+            src="/007.jpeg"
             alt="Medical Team"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-40"
           />
         </div>
         <div className="relative z-10 text-center text-white px-6 max-w-4xl">
@@ -36,7 +37,7 @@ function About() {
       className="rounded-lg overflow-hidden"
     >
       <img
-        src="/005.jpeg"
+        src="/010.jpeg"
         alt="Healthcare workers"
         className="w-full h-full object-cover"
       />
@@ -51,13 +52,23 @@ function About() {
     >
       <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
       <p className="text-gray-700 text-lg mb-4">
-        MANCA Health Foundation is dedicated to improving maternal and child health by providing essential healthcare services, education, and support programs.
+        MANCA Health Foundation is focused on Health and Well-being for Maternal, Neonatal, Child, and Adolescent. We are dedicated to improving maternal and child health by providing essential healthcare services, education, and support programs.
       </p>
       <p className="text-gray-700 text-lg">
         Through our dedicated team of professionals, we ensure that families receive the best possible care, empowering communities for a healthier future.
       </p>
       <p className="text-gray-700 text-lg mb-4">
-      We believe that every mother and child deserves access to quality healthcare, regardless of their location or socioeconomic status, and strive to eliminate disparities through sustainable and impactful initiatives.      </p>
+        MANCA Health Foundation is focused on Health and Well-being for Maternal, Neonatal, Child, and Adolescent. We are dedicated to improving maternal and child health by providing essential healthcare services, education, and support programs.
+      </p>
+      <p className="text-gray-700 text-lg">
+        Through our dedicated team of professionals, we ensure that families receive the best possible care, empowering communities for a healthier future.
+      </p>
+      <p className="text-gray-700 text-lg mb-4">
+        MANCA Health Foundation is focused on Health and Well-being for Maternal, Neonatal, Child, and Adolescent. We are dedicated to improving maternal and child health by providing essential healthcare services, education, and support programs.
+      </p>
+      <p className="text-gray-700 text-lg">
+        Through our dedicated team of professionals, we ensure that families receive the best possible care, empowering communities for a healthier future.
+      </p>
     </motion.div>
   </div>
 </section>
@@ -95,6 +106,8 @@ function About() {
           <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">Get Involved</button>
         </div>
       </section>
+
+      <Strategies />  
 
       {/* Governance Structure Section */}
       <section className="py-20 bg-gray-100">

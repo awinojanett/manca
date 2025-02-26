@@ -8,12 +8,12 @@ interface HeroProps {
 
 function Hero({ onScrollClick }: HeroProps) {
   return (
-    <div className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-500 text-white overflow-hidden">
+    <div className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-700 to-indigo-700 text-white overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/mother.jpg"
           alt="Background"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-40"
         />
       </div>
       

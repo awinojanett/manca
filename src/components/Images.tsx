@@ -26,7 +26,7 @@ const ImagesSlider: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto text-center py-8">
-      <h2 className="text-3xl font-bold mb-6">Stories through images</h2>
+      <h2 className="text-3xl font-bold mb-6">Stories Through Images</h2>
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index} className="px-2">

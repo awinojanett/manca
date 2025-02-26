@@ -9,7 +9,7 @@ function Contact() {
       <div className="relative h-[40vh] flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&q=80"
+            src="/006.jpeg"
             alt="Contact Us"
             className="w-full h-full object-cover opacity-20"
           />
