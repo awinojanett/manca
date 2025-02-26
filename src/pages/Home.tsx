@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Programs from '../components/Programs';
 import Mission from '../components/Mission';
 import Values from '../components/Values';
+import HeroSection from '../components/HeroSection';
 
 function Home() {
   const scrollToPrograms = () => {
@@ -14,6 +15,7 @@ function Home() {
     <div>
       <Hero onScrollClick={scrollToPrograms} />
       <Mission />
+      <HeroSection />
       <Values />
       <Programs />
     </div>

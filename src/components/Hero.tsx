@@ -8,7 +8,7 @@ interface HeroProps {
 
 function Hero({ onScrollClick }: HeroProps) {
   return (
-    <div className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-green-600 text-white overflow-hidden">
+    <div className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-500 text-white overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/mother.jpg"

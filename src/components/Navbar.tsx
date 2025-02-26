@@ -18,8 +18,9 @@ function Navbar() {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/gallery", label: "Gallery" },
+    { path: "/about", label: "About Us" },
+    { path: "/programmes", label: "Our Programmes" },
+    { path: "/community", label: "Our Community" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -97,7 +98,7 @@ function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
             <div className="h-16 w-auto">
@@ -114,8 +115,8 @@ function Navbar() {
                   to={link.path}
                   className={`px-3 py-2 text-sm font-medium rounded-full transition-colors ${
                     isActive(link.path)
-                      ? "text-white bg-blue-500"
-                      : "text-gray-600 hover:text-blue-500 hover:bg-blue-500"
+                      ? "text-blue-500"
+                     : "text-gray-600 hover:text-blue-500"
                   }`}
                 >
                   {link.label}
@@ -123,9 +124,9 @@ function Navbar() {
               ))}
               <Link
                 to="/donate"
-                className="block w-full text-center px-4 py-2 mt-4 text-sm font-medium text-white bg-green-600 border-2 border-green-600 hover:bg-green-700 hover:border-green-700 rounded-full transition-colors"
+                className="block w-full text-center px-4 py-2 mt-4 text-sm font-medium text-green-600 border-2 border-green-600 hover:text-green-700 hover:border-green-700 rounded-full transition-colors"
                 onClick={() => setIsOpen(false)}>
-                Donate Now
+                Donate
               </Link>
             </div>
 
@@ -153,8 +154,8 @@ function Navbar() {
                   to={link.path}
                   className={`block px-3 py-2 rounded-full text-base font-medium ${
                     isActive(link.path)
-                      ? "text-white bg-manca-blue"
-                      : "text-gray-600 hover:text-manca-blue hover:bg-blue-50"
+                      ? "text-blue-500"
+                      : "text-gray-600 hover:text-blue-500"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -165,7 +166,7 @@ function Navbar() {
                 to="/donate"
                 className="block w-full text-center px-4 py-2 mt-4 text-sm font-medium text-white bg-green-600 border-2 border-green-600 hover:bg-green-700 hover:border-green-700 rounded-full transition-colors"
                 onClick={() => setIsOpen(false)}>
-                Donate Now
+                Donate
               </Link>
             </div>
           </div>

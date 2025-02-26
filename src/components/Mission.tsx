@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -10,7 +9,7 @@ function Mission() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-2">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -31,17 +30,23 @@ function Mission() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Accessible Healthcare</h3>
-            <p className="text-gray-700">Providing quality healthcare services to underserved communities.</p>
+          <div className="bg-blue-800 text-white p-8 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Accessible Healthcare</h3>
+            <p>
+            Ensuring that individuals in underserved communities have access to high-quality, affordable, and timely healthcare services. Our goal is to bridge the gap in medical care by offering essential treatments, preventive care, and health education to improve overall well-being.
+            </p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Education & Advocacy</h3>
-            <p className="text-gray-700">Empowering communities through knowledge and advocacy.</p>
+            <p className="text-gray-700">
+            Empowering communities through knowledge, awareness, and strong advocacy efforts. We provide educational resources, training programs, and policy support to help individuals make informed decisions about their health and well-being, ensuring lasting positive change.
+            </p>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Community Initiatives</h3>
-            <p className="text-gray-700">Building sustainable solutions through local engagement.</p>
+          <div className="bg-green-700 text-white p-8 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Community Initiatives</h3>
+            <p>
+            Building sustainable solutions through local engagement, collaboration, and empowerment. By working closely with community members, organizations, and leaders, we create impactful programs that address pressing needs, foster self-sufficiency, and drive long-term positive change. 
+            </p>
           </div>
         </motion.div>
       </div>
