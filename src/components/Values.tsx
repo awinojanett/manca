@@ -37,8 +37,13 @@ function Values() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="relative py-20 bg-gradient-to-br from-blue-100 via-green-100 to-blue-50 overflow-hidden">
+      {/* Decorative Dots */}
+      <div className="absolute top-10 left-10 w-24 h-24 bg-green-400 opacity-20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-400 opacity-20 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-400 opacity-10 rounded-full blur-2xl"></div>
+
+      <div className="max-w-6xl mx-auto px-4 relative">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +64,7 @@ function Values() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-gray-50 p-8 rounded-lg"
+              className="bg-white shadow-lg p-8 rounded-lg relative"
             >
               <value.icon className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
